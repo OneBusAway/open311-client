@@ -26,12 +26,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>jCenter</id>
-            <url>https://api.bintray.com/maven/cutr-at-usf/cutr-mvn-repo/open311client/;publish=1</url>
-        </repository>
-    </distributionManagement>
+    <<distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
+    </repository>
+    <snapshotRepository>
+        <id>github</id>
+        <name>GitHub Packages Snapshot</name>
+        <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
+    </snapshotRepository>
+</distributionManagement>
 
     <dependencies>
         <dependency>
