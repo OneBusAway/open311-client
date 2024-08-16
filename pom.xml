@@ -27,17 +27,17 @@
     </properties>
 
     <distributionManagement>
-    <repository>
-        <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
-    </repository>
-    <snapshotRepository>
-        <id>github</id>
-        <name>GitHub Packages Snapshot</name>
-        <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
-    </snapshotRepository>
-</distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
+        </repository>
+        <snapshotRepository>
+            <id>github</id>
+            <name>GitHub Packages Snapshot</name>
+            <url>https://maven.pkg.github.com/OneBusAway/open311-client</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -51,13 +51,11 @@
             <artifactId>json</artifactId>
             <version>20141113</version>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.5.3</version>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
