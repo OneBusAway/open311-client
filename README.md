@@ -14,52 +14,14 @@ This is a java client to submit issues to Open311 GeoReport v2 compliant systems
 
 ##### Add library as dependency
 
-###### Maven
-```
-<?xml version="1.0" encoding="UTF-8" ?>
-<settings
-	xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
-	xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-
-	<profiles>
-		<profile>
-			<repositories>
-				<repository>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-					<id>central</id>
-					<name>bintray</name>
-					<url>http://jcenter.bintray.com</url>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-					<id>central</id>
-					<name>bintray-plugins</name>
-					<url>http://jcenter.bintray.com</url>
-				</pluginRepository>
-			</pluginRepositories>
-			<id>bintray</id>
-		</profile>
-	</profiles>
-	<activeProfiles>
-		<activeProfile>bintray</activeProfile>
-	</activeProfiles>
-</settings>
-```
-
 ###### Gradle
 ```
 repositories {
-    jcenter()
+      maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-	compile 'edu.usf.cutr:open311client:1.0.0'
+     implementation 'com.github.OneBusAway:open311-client:1.0.10'
 }
 ```
 
